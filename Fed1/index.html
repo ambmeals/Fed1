@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Beginning Meta Tags -->
+    <title> A.I. Communication Academy | Enroll Today</title>
+    <link rel="shortcut icon" type="image/jpg" href="photos/favicon (3).ico" />
+    <meta charset="utf-8" />
+    <meta name="fakeTechnicalSchool" content="MockUp Webpage" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="A.I., Academy, fake school" />
+    <meta name="author" content="Amber Mills" />
+
+
+    <!-- IMPORTED CUSTOM CSS-->
+    <link href="stylesheets/customcss.css" rel="stylesheet" />
+
+    <!-- ADD ICON LIBRARY -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="javaScript/jsCustom.js"></script>
+
+
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <div id="headerOverlay">
+                <!-- A header is a container at the top of a page or section-->
+                <h1>A.I. Communication Academy</h1>
+                <p><strong>Communicate with the like minded TODAY!</strong></p>
+                <!-- Add font awesome icons -->
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+            </div>
+        </header>
+
+
+
+        <!-- Hamburger -->
+        <!-- javascript: void(0) will tell the browser not to do anything with the link
+        Instead we will be in control of what to do with the link via JS-->
+        <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
+            &#9776;
+            <!-- The above code is a character entity reference that will place a hamburger menu icon in the UI -->
+        </a>
+
+        <!-- Added the id below for Hamburger menu -->
+        <nav>
+            <!--Navigation to local pages-->
+            <ul class="topnav" id="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="localPages/contact.html">Contact</a></li>
+                <li><a href="localPages/classes.html">Classes</a> </li>
+                <li><a href="localPages/meetus.html">Meet Us</a></li>
+
+            </ul>
+
+        </nav>
+
+
+        <div>
+            <img src="photos/robots/rockOnBot.jpg" alt="rock on robot"
+                 medium
+                 height="350"
+                 width="525" />
+        </div>
+
+        <div class="large">
+            <h1>About Us</h1> <p>
+                A.I. Communcation Academy is a fast-growing software company that keeps culture and creativity at the heart of everything we do. Our mission is to help students unlock their creativity and build exceptional A.I. communcation skills using our uniquely powerful teaching platform and  do it all without writing a single line of code.
+
+            </p><br style="clear:both" />
+
+            <h1>Why Choose Us!</h1>
+
+            <article>
+
+
+                <img src="photos/robots/robot3.jpg"
+                     style="float:left; width:600px; height:400px;">
+                <h2>Bleeding Edge Technology:</h2><p>
+                    Because of this exceptional rate of growth, A.I. Communcation Academy-Pluto is currently expanding its facilities in order to serve more students in the area. This growing location will offer new courses and will continue to provide the gold standard in hands-on technical education to even more students. For each hour of classroom instruction, our students spend at least three hours in a lab or shop setting, becoming proficient in the skills they need to excel in their careers. Our graduates are highly trained and fully equipped for successful careers.
+                </p><br style="clear:both" />
+
+
+
+
+                <img src="photos/robots/girlBot.jpg" alt="store robot"
+                     style="float:right; width:600px; height:400px;">
+
+                <h2>Student Centered:</h2><p>
+                    In addition, recent renovations to the Robotic Center give students in our growing A.I. Division access to our unparalleled tools and equipment in up-to-date shops. At A.C.A., we prepare students for professional success by giving them hands-on experience in professional facilities.Outside the St. Louis metro area, our new Pluto location continues the College’s tradition of excellence with its state-of-the art shops, labs and equipment. In its first year, A.I. Communcation Academy-Pluto has already surpassed the  five-year enrollment goals for this location.
+                </p>
+            </article>
+            <br style="clear:both" />
+        </div>
+
+
+
+    </main>
+    <footer>
+        <!-- A footer is a container at the bottom of a page or section and usually provides closing info -->
+        <br /> &copy;Copyright 2021 Amber Mills <br />
+    </footer>
+
+
+    <!-- The below function is what toggles the hamburger menu opened/closed. -->
+    <script>
+        //In between these script tags we are in JS mode
+        function toggleNav() {
+            //Capture the ul #nav-list and toggle the expanded class upon click
+            let navList = document.getElementById('nav-list');
+            navList.classList.toggle('expanded');
+            //Below will be the toggle that will turn Hamburger menu into an 'X'
+            let btnMenu = document.getElementById('menu-btn');
+            if (navList.classList.contains('expanded')) {
+                btnMenu.innerHTML = "&times;"
+            }
+
+            else {
+                btnMenu.innerHTML = "&#9776;";
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
