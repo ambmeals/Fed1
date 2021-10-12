@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- JAVASCRIPT -->
-    <script src="javaScript/jsCustom.js"></script>
+    <script src="../javaScript/validation.js"></script>
 
 
 </head>
@@ -61,6 +61,50 @@
             </ul>
 
         </nav>
+
+        <h1>Contact Us Today!</h1>
+        <img src="../photos/robots/wallE.jpg" alt="wallE" style="width:40%" />
+        <center>
+            <br /><br /><br /><br /><br /><br />
+            <form action="#" method="get" onsubmit="validateForm(event)">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <!-- name attribute below will capture the input in a variable called name in the queryString in the url-->
+                            <input type="text" id="tbName" name="name" class="form-control" placeholder="Name" />
+                            <span id="rfvName" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Email" />
+                            <span id="rfvEmail" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
+                            <span id="rfvSubject" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <textarea id="tbMessage" name="message" class="form-control" placeholder="Message"></textarea>
+                            <span id="rfvMessage" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-success" value="Send Message" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </center><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+
+
+
     </main>
     <footer>
         <!-- A footer is a container at the bottom of a page or section and usually provides closing info -->

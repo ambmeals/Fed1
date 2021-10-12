@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="index.html" />
     <Content Include="javaScript\jsCustom.js" />
+    <Content Include="javaScript\validation.js" />
     <Content Include="localPages\classes.html" />
     <Content Include="localPages\contact.html" />
     <Content Include="localPages\meetus.html" />
