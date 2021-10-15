@@ -22,6 +22,8 @@
     <script src="javaScript/jsCustom.js"></script>
 
 
+
+
 </head>
 
 <body>
@@ -41,7 +43,7 @@
 
         <!-- Hamburger -->
         <!-- javascript: void(0) will tell the browser not to do anything with the link
-    Instead we will be in control of what to do with the link via JS-->
+        Instead we will be in control of what to do with the link via JS-->
         <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
             &#9776;
             <!-- The above code is a character entity reference that will place a hamburger menu icon in the UI -->
@@ -65,11 +67,11 @@
         <div class="sidenav">
             <h2>By Department:</h2>
             <a href="meetus.html">Leadership</a>
-                <a href="teamPages/sales.html">Sales</a>
-                <a href="teamPages/instructors.html">Instructorss</a>
-                <a href="teamPages/admin.html">Admin</a>
-                
-</div>
+            <a href="teamPages/sales.html">Sales</a>
+            <a href="teamPages/instructors.html">Instructors</a>
+            <a href="teamPages/admin.html">Admin</a>
+
+        </div>
         <h1>Leadership</h1>
 
         <div id="circle-shape-example">
@@ -79,7 +81,7 @@
             <h2>PRESIDENT: Patricia Smith</h2><p>
                 Patricia Smith is president and chief operating officer of A.I. Communication Academy. In this role, she is responsible for leading the company’s global field operations, with a focus on in-market executional leadership, talent development and deployment.
                 <br />
-            <strong><em>“We must become more entrepreneurial, capitalizing on our size and scale, to accelerate our A.I. Communcating skills.”</em></strong>
+                <strong><em>“We must become more entrepreneurial, capitalizing on our size and scale, to accelerate our A.I. Communcating skills.”</em></strong>
             </p>
         </div>
 
@@ -92,7 +94,7 @@
 
         <div id="circle-shape-example">
             <img src="../photos/robots/robot1.jpg"
-             alt="headshot" class="curve">
+                 alt="headshot" class="curve">
             <h2>CHIEF EXEC: X Æ A-Xii</h2>
             <p>
                 X Æ A-Xii is Chief Executive Officer of A.I. Communication Academy. X Æ A-Xii, who first joined the company in 2020, has held a number of leadership roles around the world. He became CEO in 2017 and Chairman of the Board in 2019.
@@ -104,32 +106,32 @@
         </div>
 
     </main>
-<footer>
-    <!-- A footer is a container at the bottom of a page or section and usually provides closing info -->
-    <br /> &copy;Copyright 2021 Amber Mills <br />
-</footer>
+    <footer>
+        <!-- A footer is a container at the bottom of a page or section and usually provides closing info -->
+        <br /> &copy;Copyright 2021 Amber Mills <br />
+    </footer>
 
 
-<!-- The below function is what toggles the hamburger menu opened/closed. -->
-<script>
-    //In between these script tags we are in JS mode
-    function toggleNav() {
-        //Capture the ul #nav-list and toggle the expanded class upon click
-        let navList = document.getElementById('nav-list');
-        navList.classList.toggle('expanded');
-        //Below will be the toggle that will turn Hamburger menu into an 'X'
-        let btnMenu = document.getElementById('menu-btn');
-        if (navList.classList.contains('expanded')) {
-            btnMenu.innerHTML = "&times;"
+    <!-- The below function is what toggles the hamburger menu opened/closed. -->
+    <script>
+        //In between these script tags we are in JS mode
+        function toggleNav() {
+            //Capture the ul #nav-list and toggle the expanded class upon click
+            let navList = document.getElementById('nav-list');
+            navList.classList.toggle('expanded');
+            //Below will be the toggle that will turn Hamburger menu into an 'X'
+            let btnMenu = document.getElementById('menu-btn');
+            if (navList.classList.contains('expanded')) {
+                btnMenu.innerHTML = "&times;"
+            }
+
+            else {
+                btnMenu.innerHTML = "&#9776;";
+            }
+
         }
 
-        else {
-            btnMenu.innerHTML = "&#9776;";
-        }
-
-    }
-
-</script>
+    </script>
 
 </body>
 </html>

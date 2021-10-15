@@ -3,12 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+
+
+
 body {
     margin: 30px;
     background-color: lightgray;
     background: repeat center fixed;
     background-image: url('../photos/background/grey.jpg');
-
 }
 
 main {
@@ -28,8 +30,7 @@ p {
     font-size: 125%;
 }
 
-/*CIRCLE SHAPE CSS*/
-/*#region*/
+
 
 #circle-shape-example {
     font-family: Open Sans, sans-serif;
@@ -37,33 +38,19 @@ p {
     padding-right: 10em;
 }
 
-#circle-shape-example p {
-    line-height: 1.5;
-    font-size: 20px;
-}
+    #circle-shape-example p {
+        line-height: 1.5;
+        font-size: 20px;
+    }
 
-#circle-shape-example .curve {
-    width: 25%;
-    height: auto;
-    min-width: 100px;
-    float: left;
-    margin-right: 2rem;
-    border-radius: 50%;
-    
-}
-
-.card img:hover {
-    background-color: darkblue;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-/*#endregion*/
-
-/*BEGIN TABLE FOR CLASS SCHEDULE*/
-/*#region*/
+    #circle-shape-example .curve {
+        width: 25%;
+        height: auto;
+        min-width: 100px;
+        float: left;
+        margin-right: 2rem;
+        border-radius: 50%;
+    }
 
 table {
     border-collapse: separate;
@@ -149,15 +136,12 @@ tfoot {
             border-bottom-right-radius: 5px;
         }
 
-        /*#endregion*/
 
-
-/* THE SIDEBAR MENU */
-/*#region*/
+/* The sidebar menu */
 .sidenav {
     height: 205.4%; /* Full-height: remove this if you want "auto" height */
     width: 140px; /* Set the width of the sidebar */
-    position:absolute; /* Fixed Sidebar (stay in place on scroll) */
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 30px; /* Stay at the top */
     right: 0;
@@ -166,9 +150,9 @@ tfoot {
     padding-top: 20px;
 }
 
-.sidenav h2{
-    color: white;
-}
+    .sidenav h2 {
+        color: white;
+    }
 
     /* The navigation menu links */
     .sidenav a {
@@ -201,13 +185,12 @@ tfoot {
         }
 }
 
-/*#endregion*/
 
 
 article h2 {
     color: black;
     font-size: 55px;
-   text-align: center;
+    text-align: center;
 }
 
 
@@ -228,7 +211,7 @@ header h1 {
 
 nav ul {
     background-color: blue;
-    text-align:center;
+    text-align: center;
     border-top: 4px solid darkgray;
     border-bottom: 4px solid darkgray;
 }
@@ -251,7 +234,7 @@ a:hover, a:active, a:focus {
     background-color: darkblue;
 }
 
-/*#region NAVBAR LINK STYLING*/
+/*#region navbar link styling*/
 nav a {
     font-weight: bold;
     color: black;
@@ -267,7 +250,6 @@ nav li:hover {
 }
 
 nav ul li {
-    
     display: inline-block;
 }
 
@@ -280,8 +262,7 @@ nav ul li {
 
 
 
-/*IMPORTED HEADER FONTS H1, H2*/
-/*#region*/
+/*Imported Fonts*/
 h1, h2, footer {
     text-align: center;
     font-family: 'Bebas Neue', sans-serif;
@@ -298,7 +279,7 @@ header p {
     text-align: left;
     padding-left: 3%;
     color: red;
-    text-shadow: 1.1px 2px  black;
+    text-shadow: 1.1px 2px black;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -323,7 +304,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-/*#endregion*/
+
 
 nav ul {
     min-height: 52px;
@@ -396,7 +377,7 @@ body {
 
     /*#region*/
 
-    /* STYLE ALL FONT AWESOME ICONS */
+    /* Style all font awesome icons */
     .fa {
         padding: 10px;
         font-size: 30px;
@@ -430,5 +411,5 @@ body {
     /*#endregion*/
 
 
-}
 
+}
