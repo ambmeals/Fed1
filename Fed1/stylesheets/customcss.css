@@ -7,11 +7,32 @@
 
 
 body {
-    
     background-color: lightgray;
     background: repeat center fixed;
     background-image: url('../photos/background/grey.jpg');
-    
+    }
+
+/* Facebook */
+.fa-facebook {
+    float: right;
+    padding: 15.5px;
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    float: right;
+    padding: 15.5px;
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    float: right;
+    padding: 15.5px;
+    background: #C13584;
+    color: white;
 }
 
 
@@ -34,7 +55,7 @@ p {
 }
 
 
-
+/**#region BEGIN OVAL SHAPE */
 #circle-shape-example {
     font-family: Open Sans, sans-serif;
     margin: 2rem;
@@ -55,6 +76,8 @@ p {
         border-radius: 50%;
     }
 
+    /**#endregion*/
+
 
 /*#region begin styling table */
 table {
@@ -71,8 +94,8 @@ td {
 }
 
 thead {
-    background: #880050;
-    background: linear-gradient(#880010, #880000);
+    background: #000088;
+    background: linear-gradient(#000088, #000099, #000060);
     color: #fff;
     font-size: 11px;
     text-transform: uppercase;
@@ -147,11 +170,11 @@ tfoot {
 /* The sidebar menu */
 .sidenav {
     height: 164%; /* Full-height: remove this if you want "auto" height */
-    width: 125px; /* Set the width of the sidebar */
+    width: 130.5px; /* Set the width of the sidebar */
     position: absolute; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 220px; /* Stay at the top */
-    top: 208px; /* Stay at the top */
+    top: 235px; /* Stay at the top */
+    top: 190px; /* Stay at the top */
     right: 8px;
     background-color: #111; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
@@ -214,7 +237,7 @@ header h1 {
     text-align: left;
     letter-spacing: 0.1em;
     padding-left: 30px;
-    color: #880000;
+    color: #1883CD;
     text-shadow: 2px 2px white;
 }
 
@@ -273,7 +296,7 @@ a:hover #tiltpic {
 
         /* Add a color to the active/current link */
         .topnav a.active {
-            background-color: #880000;
+            background-color: #33C972;
             color: #ffffff;
         }
 
@@ -297,7 +320,7 @@ header p {
     font-size: large;
     text-align: left;
     padding-left: 3%;
-    color: #880000;
+    color: #33C972;
     text-shadow: 1.1px 2px black;
     font-family: 'Bebas Neue', cursive;
 }
@@ -310,6 +333,12 @@ header p {
     background-position: 4% center;
     padding: 2em;
 }
+
+
+
+
+
+
 /* go add (wrap ctrl+shift+w) a <div id="headerOverlay"> inside the <header> on each .html page.*/
 
 header h1, header p {
@@ -387,12 +416,9 @@ body {
     .card:hover {
         background-color: #000088;
         color: white;
-        
+        outline: double;
     }
 
-img .shape {
-    border-radius: 50%;
-}
 
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -411,17 +437,9 @@ img .shape {
 
     /* Set a specific color for each brand */
 
-    /* Facebook */
-    .fa-facebook {
-        background: #3B5998;
-        color: white;
-    }
 
-    /* Twitter */
-    .fa-twitter {
-        background: #55ACEE;
-        color: white;
-    }
+
+  
 
 
     /*#endregion*/
@@ -444,7 +462,7 @@ label {
 }
 
 input[type=submit] {
-    background-color: #880000;
+    background-color: #33C972;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -453,7 +471,7 @@ input[type=submit] {
 }
 
     input[type=submit]:hover {
-        background-color: #880000;
+        background-color: #33C972;
         color: white;
     }
 
