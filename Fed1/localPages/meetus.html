@@ -4,7 +4,7 @@
 
     <!-- Beginning Meta Tags -->
     <title> A.I. Communication Academy | Enroll Today</title>
-    <link rel="shortcut icon" type="image/jpg" href="../photos/favicon (3).ico" />
+    <link rel="shortcut icon" type="image/jpg" href="photos/favicon (3).ico" />
     <meta charset="utf-8" />
     <meta name="fakeTechnicalSchool" content="MockUp Webpage" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,56 +22,43 @@
     <script src="javaScript/jsCustom.js"></script>
 
 
-
-
 </head>
 
 <body>
     <main>
+
         <header>
             <div id="headerOverlay">
                 <!-- A header is a container at the top of a page or section-->
                 <h1>A.I. Communication Academy</h1>
                 <p><strong>Communicate with the like minded TODAY!</strong></p>
                 <!-- Add font awesome icons -->
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
+
             </div>
+
         </header>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
 
 
 
-        <!-- Hamburger -->
-        <!-- javascript: void(0) will tell the browser not to do anything with the link
-        Instead we will be in control of what to do with the link via JS-->
-        <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
-            &#9776;
-            <!-- The above code is a character entity reference that will place a hamburger menu icon in the UI -->
-        </a>
 
+        <!-- Added the id below for Hamburger menu -->
         <nav>
             <!--Navigation to local pages-->
-            <ul class="topnav" id="nav-list">
 
-                <li><a href="../index.html">Home</a>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="meetus.html">Meet Us</a></li>
+            <div class="topnav">
+                <a href="../index.html">Home</a>
+                <a class="active" href="meetus.html">Our Team</a>
+                <a href="classes.html">Classes</a>
+                <a href="contact.html">Contact</a>
 
-
-            </ul>
-
+            </div>
         </nav>
 
-        <!-- Side navigation -->
-        <div class="sidenav">
-            <h2>By Department:</h2>
-            <a href="meetus.html">Leadership</a>
-            <a href="teamPages/sales.html">Sales</a>
-            <a href="teamPages/instructors.html">Instructors</a>
-            <a href="teamPages/admin.html">Admin</a>
 
-        </div>
+
+
         <h1>Leadership</h1>
 
         <div id="circle-shape-example">
@@ -85,6 +72,8 @@
             </p>
         </div>
 
+        <!-- Side navigation -->
+  
         <div id="circle-shape-example">
             <img src="../photos/team/tm2.jpg"
                  alt="headshot" class="curve"><h2>EXEC LEADERSHIP: BARB APTER</h2>
@@ -101,7 +90,14 @@
                 Quin is leading A.I. Communication Academy in its continuing evolution as a robot communication Academy. A.I. Communication Academy is a growth company that provides innovative technology that make life’s everyday moments more enjoyable, all while doing business the right way. The result is shared opportunity for communities, customers, employees and shareowners.
             </p><br />
 
+            <div class="sidenav">
+                <h2>By Department:</h2>
+                <a href="meetus.html">Leadership</a>
+                <a href="teamPages/sales.html">Sales</a>
+                <a href="teamPages/instructors.html">Instructors</a>
+                <a href="teamPages/admin.html">Admin</a>
 
+            </div>
 
         </div>
 

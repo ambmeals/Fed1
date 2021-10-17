@@ -33,49 +33,41 @@
                 <h1>A.I. Communication Academy</h1>
                 <p><strong>Communicate with the like minded TODAY!</strong></p>
                 <!-- Add font awesome icons -->
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
+
             </div>
+
         </header>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
 
-
-
-        <!-- Hamburger -->
-        <!-- javascript: void(0) will tell the browser not to do anything with the link
-    Instead we will be in control of what to do with the link via JS-->
-        <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
-            &#9776;
-            <!-- The above code is a character entity reference that will place a hamburger menu icon in the UI -->
-        </a>
 
         <!-- Added the id below for Hamburger menu -->
         <nav>
             <!--Navigation to local pages-->
-            <ul class="topnav" id="nav-list">
 
-                <li><a href="../index.html">Home</a>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="meetus.html">Meet Us</a></li>
+            <div class="topnav">
+                <a href="../index.html">Home</a>
+                <a href="meetus.html">Our Team</a>
+                <a class="active" href="classes.html">Classes</a>
+                <a href="contact.html">Contact</a>
 
-
-            </ul>
-
+            </div>
         </nav>
+
         <center><h1>Enroll In Our Classes Today!</h1></center>
 
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <a href="Contact.html">
-                        <img src="../photos/classes/class1.jpg" alt="coding" style="width:100%">
-                    </a>
-                    <p>
-                        <strong>Don't Make Me Think:</strong><br>
-                        This class is a beignner class. Students learn from the very beginning.<br />
-                    </p>
+                           <a href="Contact.html" class="classes">
+                            <img src="../photos/classes/class1.jpg" alt="coding" style="width:100%" class="tilt pic">
+                        </a>
+                        <p>
+                            <strong>Don't Make Me Think:</strong><br>
+                            This class is a beignner class. Students learn from the very beginning.<br />
+                        </p>
+                    </div>
                 </div>
-            </div>
             <div class="column">
                 <div class="card">
                     <a href="Contact.html">
@@ -106,8 +98,10 @@
                         <img src="../photos/classes/class4.jpg"
                              alt="coding" style="width:100%">
                     </a>
-                    <p><strong>Robotic UI/UX Design:</strong><br />
-                    This class will entice and delight all alike. The imagery here is robotic and clean.  </p>
+                    <p>
+                        <strong>Robotic UI/UX Design:</strong><br />
+                        This class will entice and delight all alike. The imagery here is robotic and clean.
+                    </p>
                 </div>
             </div>
             <div class="column">
@@ -116,8 +110,10 @@
                         <img src="../photos/classes/class5.jpg"
                              alt="classroom" style="width:100%">
                     </a>
-                    <p><strong>Interactive Technology:</strong><br />
-                    This class will go through the ins and outs of responsive technology, fast & fun. </p>
+                    <p>
+                        <strong>Interactive Technology:</strong><br />
+                        This class will go through the ins and outs of responsive technology, fast & fun.
+                    </p>
                 </div>
             </div>
             <div class="column">
@@ -125,8 +121,10 @@
                     <a href="Contact.html">
                         <img src="../photos/classes/class6.jpg" alt="learning" style="width:102%">
                     </a>
-                    <p><strong>Robotic Explosives:</strong><br />
-                    This class goes over the intermediate lessons of operating explosives safely.</p>
+                    <p>
+                        <strong>Robotic Explosives:</strong><br />
+                        This class goes over the intermediate lessons of operating explosives safely.
+                    </p>
                 </div>
             </div>
         </div>
@@ -202,7 +200,7 @@
 
                 </tbody>
                 <tfoot>
-               
+
                 </tfoot>
             </table>
         </center>
@@ -218,26 +216,6 @@
     </footer>
 
 
-    <!-- The below function is what toggles the hamburger menu opened/closed. -->
-    <script>
-        //In between these script tags we are in JS mode
-        function toggleNav() {
-            //Capture the ul #nav-list and toggle the expanded class upon click
-            let navList = document.getElementById('nav-list');
-            navList.classList.toggle('expanded');
-            //Below will be the toggle that will turn Hamburger menu into an 'X'
-            let btnMenu = document.getElementById('menu-btn');
-            if (navList.classList.contains('expanded')) {
-                btnMenu.innerHTML = "&times;"
-            }
-
-            else {
-                btnMenu.innerHTML = "&#9776;";
-            }
-
-        }
-
-    </script>
 
 </body>
 </html>

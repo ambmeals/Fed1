@@ -7,11 +7,14 @@
 
 
 body {
-    margin: 30px;
+    
     background-color: lightgray;
     background: repeat center fixed;
     background-image: url('../photos/background/grey.jpg');
+    
 }
+
+
 
 main {
     background-color: rgba(211,211,211,0.9) !important;
@@ -52,6 +55,8 @@ p {
         border-radius: 50%;
     }
 
+
+/*#region begin styling table */
 table {
     border-collapse: separate;
     border-spacing: 0;
@@ -66,8 +71,8 @@ td {
 }
 
 thead {
-    background: #395870;
-    background: linear-gradient(#49708f, #293f50);
+    background: #880050;
+    background: linear-gradient(#880010, #880000);
     color: #fff;
     font-size: 11px;
     text-transform: uppercase;
@@ -96,7 +101,7 @@ td {
     }
 
 .book-title {
-    color: #395870;
+    color: black;
     display: block;
 }
 
@@ -129,22 +134,25 @@ tfoot {
     }
 
         tfoot tr:last-child td:first-child {
-            border-bottom-left-radius: 5px;
+            border-bottom-left-radius: 10px;
         }
 
         tfoot tr:last-child td:last-child {
-            border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 10px;
         }
+
+        /*#endregion*/
 
 
 /* The sidebar menu */
 .sidenav {
-    height: 205.4%; /* Full-height: remove this if you want "auto" height */
-    width: 140px; /* Set the width of the sidebar */
+    height: 164%; /* Full-height: remove this if you want "auto" height */
+    width: 125px; /* Set the width of the sidebar */
     position: absolute; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
-    top: 30px; /* Stay at the top */
-    right: 0;
+    top: 220px; /* Stay at the top */
+    top: 208px; /* Stay at the top */
+    right: 8px;
     background-color: #111; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
@@ -152,6 +160,7 @@ tfoot {
 
     .sidenav h2 {
         color: white;
+        text-align:center;
     }
 
     /* The navigation menu links */
@@ -196,7 +205,7 @@ article h2 {
 
 
 h1 {
-    color: darkblue;
+    color: #000088;
     font-size: 75px;
     text-align: left;
 }
@@ -205,22 +214,19 @@ header h1 {
     text-align: left;
     letter-spacing: 0.1em;
     padding-left: 30px;
-    color: red;
+    color: #880000;
     text-shadow: 2px 2px white;
 }
 
 nav ul {
-    background-color: blue;
+    background-color: #000088;
     text-align: center;
     border-top: 4px solid darkgray;
     border-bottom: 4px solid darkgray;
 }
 
 
-ul.blocklist a:hover {
-    background-color: yellow;
-    color: lightblue;
-}
+
 
 
 /*base links (all links)*/
@@ -231,32 +237,45 @@ ul.blocklist a:hover {
 a:hover, a:active, a:focus {
     color: lightblue;
     text-decoration: underline;
-    background-color: darkblue;
+    background-color: #000088;
 }
 
-/*#region navbar link styling*/
-nav a {
-    font-weight: bold;
+
+
+a:hover #tiltpic {
+    background-color: #ddd;
     color: black;
 }
 
-    nav a:hover, nav a:active, nav a:focus {
+
+/*#region navbar link styling*/
+.topnav {
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+}
+
+    /* Style the links inside the navigation bar */
+    .topnav a {
+        float: left;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
         text-decoration: none;
+        font-size: 17px;
     }
 
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
 
-nav li:hover {
-    background-color: darkblue;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-    nav ul li a {
-        padding: .4em 1em;
-        display: block;
-    }
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: #880000;
+            color: #ffffff;
+        }
 
 /*#endregion*/
 
@@ -278,7 +297,7 @@ header p {
     font-size: large;
     text-align: left;
     padding-left: 3%;
-    color: red;
+    color: #880000;
     text-shadow: 1.1px 2px black;
     font-family: 'Bebas Neue', cursive;
 }
@@ -321,9 +340,10 @@ nav ul {
     border-top: 6px double gray;
 }
 
-
-
 /*#region*/
+
+
+
 /*BEGIN CLASS SECTION*/
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -364,6 +384,17 @@ body {
     background-color: #f1f1f1;
 }
 
+    .card:hover {
+        background-color: #000088;
+        color: white;
+        
+    }
+
+img .shape {
+    border-radius: 50%;
+}
+
+
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
     .column {
@@ -377,21 +408,6 @@ body {
 
     /*#region*/
 
-    /* Style all font awesome icons */
-    .fa {
-        padding: 10px;
-        font-size: 30px;
-        width: 30px;
-        text-align: center;
-        text-decoration: none;
-        border-radius: 50%;
-    }
-
-
-        /* Add a hover effect if you want */
-        .fa:hover {
-            opacity: 0.7;
-        }
 
     /* Set a specific color for each brand */
 
@@ -410,6 +426,43 @@ body {
 
     /*#endregion*/
 
-
-
 }
+
+/*#region STYLING CONTACT FORM */
+
+input[type=text], select, textarea {
+    width: 55%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #880000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: none;
+}
+
+    input[type=submit]:hover {
+        background-color: #880000;
+        color: white;
+    }
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/*#endregion*/
+
+
+

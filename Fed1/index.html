@@ -41,29 +41,21 @@
         <a href="#" class="fa fa-twitter"></a>
 
 
-        <!-- Hamburger -->
-        <!-- javascript: void(0) will tell the browser not to do anything with the link
-    Instead we will be in control of what to do with the link via JS-->
-        <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
-            &#9776;
-            <!-- The above code is a character entity reference that will place a hamburger menu icon in the UI -->
-        </a>
-
-        <!-- Added the id below for Hamburger menu -->
         <nav>
             <!--Navigation to local pages-->
-            <ul class="topnav" id="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="localPages/contact.html">Contact</a></li>
-                <li><a href="localPages/classes.html">Classes</a> </li>
-                <li><a href="localPages/meetus.html">Meet Us</a></li>
+            
+            <div class="topnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="localPages/meetus.html">Our Team</a>
+                <a href="localPages/classes.html">Classes</a>
+                <a href="localPages/contact.html">Contact</a>
 
-            </ul>
 
+            </div>
         </nav>
 
-
         <div>
+            
             <img src="photos/robots/rockOnBot.jpg" alt="rock on robot"
                  medium
                  height="350"
@@ -82,7 +74,7 @@
 
 
                 <img src="photos/robots/robot3.jpg"
-                     style="float:left; width:600px; height:400px;">
+                     style="float:left; width:620px; height:400px;">
                 <h2>Bleeding Edge Technology:</h2><p>
                     Because of this exceptional rate of growth, A.I. Communcation Academy-Pluto is currently expanding its facilities in order to serve more students in the area. This growing location will offer new courses and will continue to provide the gold standard in hands-on technical education to even more students. For each hour of classroom instruction, our students spend at least three hours in a lab or shop setting, becoming proficient in the skills they need to excel in their careers. Our graduates are highly trained and fully equipped for successful careers.
                 </p><br style="clear:both" />
@@ -91,7 +83,7 @@
 
 
                 <img src="photos/robots/girlBot.jpg" alt="store robot"
-                     style="float:right; width:600px; height:400px;">
+                     style="float:right; width:620px; height:400px;">
 
                 <h2>Student Centered:</h2><p>
                     In addition, recent renovations to the Robotic Center give students in our growing A.I. Division access to our unparalleled tools and equipment in up-to-date shops. At A.C.A., we prepare students for professional success by giving them hands-on experience in professional facilities.Outside the St. Louis metro area, our new Pluto location continues the College’s tradition of excellence with its state-of-the art shops, labs and equipment. In its first year, A.I. Communcation Academy-Pluto has already surpassed the  five-year enrollment goals for this location.
@@ -109,26 +101,7 @@
     </footer>
 
 
-    <!-- The below function is what toggles the hamburger menu opened/closed. -->
-    <script>
-        //In between these script tags we are in JS mode
-        function toggleNav() {
-            //Capture the ul #nav-list and toggle the expanded class upon click
-            let navList = document.getElementById('nav-list');
-            navList.classList.toggle('expanded');
-            //Below will be the toggle that will turn Hamburger menu into an 'X'
-            let btnMenu = document.getElementById('menu-btn');
-            if (navList.classList.contains('expanded')) {
-                btnMenu.innerHTML = "&times;"
-            }
 
-            else {
-                btnMenu.innerHTML = "&#9776;";
-            }
-
-        }
-
-    </script>
 
 </body>
 </html>

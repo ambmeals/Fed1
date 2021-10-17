@@ -32,70 +32,63 @@
                 <h1>A.I. Communication Academy</h1>
                 <p><strong>Communicate with the like minded TODAY!</strong></p>
                 <!-- Add font awesome icons -->
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
+
             </div>
         </header>
 
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
 
-
-        <!-- Hamburger -->
-        <!-- javascript: void(0) will tell the browser not to do anything with the link
-    Instead we will be in control of what to do with the link via JS-->
-        <a href="javascript:void(0)" class="pull-right" onclick="toggleNav()" id="menu-btn">
-            &#9776;
-            <!-- The above code is a character entity reference that will place a hamburger menu icon in the UI -->
-        </a>
 
         <!-- Added the id below for Hamburger menu -->
         <nav>
             <!--Navigation to local pages-->
-            <ul class="topnav" id="nav-list">
 
-                <li><a href="../index.html">Home</a>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="classes.html">Classes</a></li>
-                <li><a href="meetus.html">Meet Us</a></li>
+            <div class="topnav">
+                <a href="../index.html">Home</a>
+                <a href="meetus.html">Our Team</a>
+                <a href="classes.html">Classes</a>
+                <a class="active" href="contact.html">Contact</a>
 
-
-            </ul>
-
+            </div>
         </nav>
 
         <h1>Contact Us Today!</h1>
-        <img src="../photos/robots/wallE.jpg" alt="wallE" style="width:40%" />
         <center>
+            <img src="../photos/space/robo.png" alt="wallE" style="width:35%" />
+
             <br /><br /><br /><br /><br /><br />
-            <form action="#" method="get" onsubmit="validateForm(event)">
-               
-                        <div class="form-group">
-                            <!-- name attribute below will capture the input in a variable called name in the queryString in the url-->
-                            <input type="text" id="tbName" name="name" class="form-control" placeholder="Name" />
-                            <span id="rfvName" class="text-danger"></span>
-                        </div>
-                   
-                        <div class="form-group">
-                            <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Email" />
-                            <span id="rfvEmail" class="text-danger"></span>
-                        </div>
-                    
-                   
-                        <div class="form-group">
-                            <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
-                            <span id="rfvSubject" class="text-danger"></span>
-                        </div>
-                
-                        <div class="form-group">
-                            <textarea id="tbMessage" name="message" class="form-control" placeholder="Message"></textarea>
-                            <span id="rfvMessage" class="text-danger"></span>
-                        </div>
-                    
-                        <div class="form-group">
-                            <input type="submit" class="btn btn-success" value="Send Message" />
-                        </div>
-                
-            </form>
-        </center><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                                          <div class="container">
+                                              <form action="#" method="get" onsubmit="validateForm(event)">
+                                                  <div class="form-group">
+                                                      <!-- name attribute below will capture the input in a variable called name in the queryString in the url-->
+                                                      <input type="text" id="tbName" name="name" class="form-control" placeholder="Name" />
+                                                      <span id="rfvName" class="text-danger"></span>
+                                                  </div>
+
+                                                  <div class="form-group">
+                                                      <input type="text" id="tbEmail" name="email" class="form-control" placeholder="Email" />
+                                                      <span id="rfvEmail" class="text-danger"></span>
+                                                  </div>
+
+
+                                                  <div class="form-group">
+                                                      <input type="text" id="tbSubject" name="subject" class="form-control" placeholder="Subject" />
+                                                      <span id="rfvSubject" class="text-danger"></span>
+                                                  </div>
+
+                                                  <div class="form-group">
+                                                      <textarea id="tbMessage" name="message" class="form-control" placeholder="Message"></textarea>
+                                                      <span id="rfvMessage" class="text-danger"></span>
+                                                  </div>
+
+                                                  <div class="form-group">
+                                                      <input type="submit" class="btn btn-success" value="Send Message" />
+                                                  </div>
+
+                                              </form>
+                                          </div>
+        </center><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 
 
@@ -107,26 +100,7 @@
     </footer>
 
 
-    <!-- The below function is what toggles the hamburger menu opened/closed. -->
-    <script>
-        //In between these script tags we are in JS mode
-        function toggleNav() {
-            //Capture the ul #nav-list and toggle the expanded class upon click
-            let navList = document.getElementById('nav-list');
-            navList.classList.toggle('expanded');
-            //Below will be the toggle that will turn Hamburger menu into an 'X'
-            let btnMenu = document.getElementById('menu-btn');
-            if (navList.classList.contains('expanded')) {
-                btnMenu.innerHTML = "&times;"
-            }
 
-            else {
-                btnMenu.innerHTML = "&#9776;";
-            }
-
-        }
-
-    </script>
 
 </body>
 </html>

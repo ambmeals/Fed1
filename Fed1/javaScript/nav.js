@@ -1,16 +1,9 @@
-﻿
-
-
-
-function Link1() {
-    window.location.href = "Link1";
+﻿/* Set the width of the sidebar to 250px (show it) */
+function openNav() {
+    document.getElementById("mySidepanel").style.width = "250px";
 }
-function Link2() {
-    window.location.href = "Link2";
-}
-function Link2.1(){
-    window.location.href = "Link2.1";
-}
-function Link2.2(){
-    window.location.href = "Link2.2";
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+    document.getElementById("mySidepanel").style.width = "10";
 }
