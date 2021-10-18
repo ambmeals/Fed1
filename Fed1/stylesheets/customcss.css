@@ -7,6 +7,7 @@
 
 
 body {
+    
     background-color: lightgray;
     background: repeat center fixed;
     background-image: url('../photos/background/grey.jpg');
@@ -201,10 +202,7 @@ tfoot {
         }
 
 /* Style page content */
-.main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-}
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
@@ -405,7 +403,7 @@ body {
         clear: both;
     }
 
-/* Style the counter cards */
+/* #region Style the counter cards */
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 25px;
@@ -420,6 +418,52 @@ body {
     }
 
 
+.card {
+    position: relative;
+    width: 100%;
+}
+
+.card:hover img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .2s ease;
+    backface-visibility: hidden;
+}
+
+.card:hover img {
+    transition: .2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card:hover .image {
+    opacity: 0.3;
+}
+
+.card:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+
+
+
+
+
+
 
 /* Responsive columns - one column layout (vertical) on small screens */
 @media screen and (max-width: 600px) {
@@ -429,21 +473,7 @@ body {
         margin-bottom: 20px;
     }
 
-
     /*#endregion*/
-
-    /*#region*/
-
-
-    /* Set a specific color for each brand */
-
-
-
-  
-
-
-    /*#endregion*/
-
 }
 
 /*#region STYLING CONTACT FORM */
