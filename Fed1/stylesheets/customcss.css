@@ -7,7 +7,7 @@
 
 
 body {
-    
+    margin: 0;
     background-color: lightgray;
     background: repeat center fixed;
     background-image: url('../photos/background/grey.jpg');
@@ -170,13 +170,13 @@ tfoot {
 
 /* The sidebar menu */
 .sidenav {
-    height: 164%; /* Full-height: remove this if you want "auto" height */
-    width: 130.5px; /* Set the width of the sidebar */
+    height: 164.5%; /* Full-height: remove this if you want "auto" height */
+    width: 132.5px; /* Set the width of the sidebar */
     position: absolute; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 235px; /* Stay at the top */
-    top: 190px; /* Stay at the top */
-    right: 8px;
+    top: 180px; /* Stay at the top */
+    right: 0px;
     background-color: #111; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
