@@ -170,7 +170,7 @@ tfoot {
 
 /* The sidebar menu */
 .sidenav {
-    height: 164.5%; /* Full-height: remove this if you want "auto" height */
+    height: 164.3%; /* Full-height: remove this if you want "auto" height */
     width: 132.5px; /* Set the width of the sidebar */
     position: absolute; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
@@ -327,7 +327,7 @@ header p {
 #headerOverlay {
     background-image: url('../photos/space/robo.png');
     background-repeat: no-repeat;
-    background-size: 90px;
+    background-size: 100px;
     background-position: 4% center;
     padding: 2em;
 }
